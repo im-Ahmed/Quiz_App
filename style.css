@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  height: 100dvh;
+}
+.starting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  text-align: center;
+  display: block;
+}
+
+.start-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 20px;
+  transform: scale(1.1);
+  border: 2px solid transparent;
+  background-color: purple;
+  color: white;
+
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card {
+  display: none;
+  position: absolute;
+  top: 10%;
+  width: 35%;
+  height: 570px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 2px 7px 25px rgba(0, 0, 0, 0.6);
+}
+.heading {
+  text-align: center;
+  padding: 1rem 0px;
+  font-weight: 700;
+}
+.underline {
+  width: 60%;
+  height: 4px;
+  border-radius: 50%;
+  background-color: purple;
+  margin-left: 20%;
+}
+.quest {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+main ul {
+  padding: 0px 20px;
+}
+main ul li {
+  list-style: none;
+  border: 2px solid purple;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.opt {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.correct {
+  background-color: rgb(150, 252, 150);
+  border: 2px solid rgb(150, 252, 150);
+  border-radius: 10px;
+}
+.wrong {
+  background-color: rgb(245, 101, 101);
+  color: white;
+  border: 2px solid rgb(245, 101, 101);
+  border-radius: 10px;
+}
+.bottomline {
+  width: 100%;
+  height: 2px;
+  margin-top: 5%;
+  background-color: purple;
+}
+.btns {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 5% 10%;
+}
+
+.next-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+.disabled {
+  pointer-events: none;
+}
+@media screen and (max-width: 786px) {
+  .card {
+    width: 80%;
+  }
+  .starting {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .heading {
+    font-weight: 600;
+    padding: 20px;
+  }
+}
